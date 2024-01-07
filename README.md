@@ -1,11 +1,12 @@
 Terraform Module
 ============
-This repository serves as a terraform template for proxmox module development.
+Terraform module to orchestrating Proxmox VLAN resources.
 
 ## 🪜 Repository Structure
 > [utilizable/github-actions-semver-tagging](https://github.com/utilizable/github-actions-semver-tagging)
 >> [utilizable/terraform-module](https://github.com/utilizable/terraform-module)
 >>> [utilizable/terraform-module-proxmox](https://github.com/utilizable/terraform-module-proxmox)
+>>>> [utilizable/terraform-module-proxmox-vlan](https://github.com/utilizable/terraform-module-proxmox-vlan)
 
 ## Table of Contents
 - [Requirements](#-requirements)
@@ -39,7 +40,12 @@ Module is based on [example](https://registry.terraform.io/providers/) provider.
 #### Input Variables
 ```tf
 # ./terraform/main.tf
-...
+
+node_name = "pve"
+interface = "enp7s0"
+vlan      = "10"
+name      = "vmbr10"
+address   = "192.168.10.1"
 ```
 #### Environment Requirements
 ```ini
