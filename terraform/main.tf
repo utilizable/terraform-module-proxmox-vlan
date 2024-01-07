@@ -10,4 +10,9 @@ module "main" {
   provider_proxmox_endpoint = var.provider_proxmox_endpoint
 
   // pass variables to module
+  node_name = "anykey"
+  interface = "enp7s0"
+  vlan      = "10"
+  name      = "vmbr10"
+  address   = "192.168.10.1"
 }
