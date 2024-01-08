@@ -1,4 +1,7 @@
-# main.tf
+# ./modules/../main.tf
+
+# MODULE - RESOURCES 
+# ------------------
 
 resource "proxmox_virtual_environment_network_linux_vlan" "vlan" {
   node_name = var.node_name

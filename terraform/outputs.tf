@@ -1,6 +1,6 @@
-# outputs.tf
+# ./outputs.tf
 
-# VARIABLES - OUTPUT
+# ROOT - OUTPUTS
 # ------------------
 
 output "bridge_name" {
