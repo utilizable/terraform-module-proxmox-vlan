@@ -3,7 +3,7 @@
 # ROOT - MODULES 
 # ------------------
 
-module "proxmox-vlan" {
+module "proxmox_vlan" {
   // source module
   source = "./modules/base" 
 
